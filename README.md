@@ -1,7 +1,7 @@
 # DocuAI 
 
 A minimalist, dark-themed website that simplifies GitHub README creation with an AI-powered Botpress chatbot. 
-
+[/docu-ai-git.vercel.app/](https://docu-ai-git.vercel.app/)
 ## Features 
 
 - Single-page design with a concise description 
