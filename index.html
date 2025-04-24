@@ -8,39 +8,51 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts for Futuristic Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-900 text-white font-sans">
+<body class="bg-black text-white font-sans">
     <!-- Header -->
-    <header class="bg-gray-800 py-6">
-        <div class="container mx-auto px-4">
-            <h1 class="text-2xl font-bold text-center">DocuAI</h1>
+    <header class="bg-opacity-50 bg-black py-6">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold text-blue-400 font-orbitron">DocuAI</h1>
+            <nav>
+                <a href="#features" class="text-gray-300 hover:text-blue-400 mx-4">Features</a>
+                <a href="#benchmarks" class="text-gray-300 hover:text-blue-400 mx-4">Benchmarks</a>
+                <a href="#api" class="text-gray-300 hover:text-blue-400 mx-4">API</a>
+            </nav>
         </div>
     </header>
 
     <!-- Main Section -->
-    <main class="container mx-auto px-4 py-12 text-center">
-        <section class="max-w-3xl mx-auto">
-            <h2 class="text-4xl font-bold mb-4">Effortless README Creation</h2>
-            <p class="text-lg text-gray-300 mb-6">
+    <main class="container mx-auto px-4 py-20 text-center gradient-bg">
+        <section class="max-w-4xl mx-auto">
+            <h2 class="text-5xl font-bold mb-6 font-orbitron text-white glow-text">
+                Effortless README Creation
+            </h2>
+            <p class="text-lg text-gray-300 mb-8 font-inter">
                 Many developers dread writing documentation. Let our AI-powered chatbot craft professional GitHub README files for you in minutes. Click the chatbot icon in the bottom-right corner to start!
             </p>
-            <p class="text-base text-gray-400 mb-6">
-                Input a brief summary of your project and the AI will generate your README.
+            <p class="text-base text-gray-400 mb-8 font-inter">
+                Input a brief summary of your project, and the AI will generate your README.
             </p>
+            <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full transition-all duration-300 glow-button">
+                Learn More
+            </button>
         </section>
     </main>
 
     <!-- Arrow Pointing to Botpress Icon -->
     <div class="fixed bottom-4 right-32 z-50">
-        <svg id="arrow" class="w-8 h-8 text-blue-400 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg id="arrow" class="w-8 h-8 text-blue-400 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
         </svg>
     </div>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-6">
+    <footer class="bg-opacity-50 bg-black text-gray-400 py-6">
         <div class="container mx-auto px-4 text-center">
-            <p>Developed by Nathan DeMoss © 2025 DocuAI. All rights reserved.</p>
+            <p class="font-inter">Developed by Nathan DeMoss © 2025 DocuAI. All rights reserved.</p>
         </div>
     </footer>
 
