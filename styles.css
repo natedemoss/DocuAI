@@ -1,30 +1,79 @@
+/* Reset and Base Styles */
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
-    background-color: #111827;
+    background-color: #000;
+    margin: 0;
+    overflow-x: hidden;
 }
 
+/* Futuristic Font for Headings */
+.font-orbitron {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.font-inter {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Gradient Background for Main Section */
+.gradient-bg {
+    background: linear-gradient(135deg, #1e3a8a 0%, #000 100%);
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Glowing Text Effect */
+.glow-text {
+    text-shadow: 0 0 10px rgba(59, 130, 246, 0.5), 0 0 20px rgba(59, 130, 246, 0.3);
+}
+
+/* Glowing Button Effect */
+.glow-button {
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+    transition: all 0.3s ease;
+}
+
+.glow-button:hover {
+    box-shadow: 0 0 25px rgba(59, 130, 246, 0.8);
+    transform: scale(1.05);
+}
+
+/* Header Styling */
+header {
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Main Section Animation */
+section {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Chatbot Widget Styling */
 #bp-web-widget-container {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #bp-web-widget-container:hover {
     transform: scale(1.1);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
 }
 
+/* Arrow Animation */
 #arrow {
-    animation: bounce 1s infinite;
+    animation: pulse 1.5s infinite;
 }
 
-section {
-    animation: fadeIn 1s ease-in-out;
-}
-
+/* Animations */
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(10px);
+        transform: translateY(20px);
     }
     to {
         opacity: 1;
@@ -32,11 +81,33 @@ section {
     }
 }
 
-@keyframes bounce {
+@keyframes pulse {
     0%, 100% {
-        transform: translateX(0);
+        opacity: 1;
+        transform: scale(1);
     }
     50% {
-        transform: translateX(-5px);
+        opacity: 0.5;
+        transform: scale(1.2);
+    }
+}
+
+/* Footer Styling */
+footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    .gradient-bg {
+        min-height: 60vh;
+    }
+
+    nav {
+        display: none; /* Hide nav on mobile for simplicity */
     }
 }
