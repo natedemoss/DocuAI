@@ -1,7 +1,7 @@
 # AI-Powered README Generator 
 
 A website that simplifies GitHub README creation with an AI-powered Botpress chatbot. 
-   ![UI](DocuAI/docuai.jpg)
+   ![UI](DocuAI/docuai.png)
 
 ## Features 
 
